@@ -1,0 +1,126 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+
+  <body>
+    <div id="title">
+      <h1>Personas and Storytelling</h1>
+    </div>
+
+    <div class="circle-container">
+      <!-- Pink Circle for Intro -->
+      <div class="intro-container">
+        <div class="intro-text">
+          <ul>This design exploration will focus on the public interface of library self-checkout stations. 
+          Found in libraries like the Rockefeller at Brown University, these allow patrons to check out books without assistance from a librarian.
+          </ul>
+        </div>
+      </div>
+
+      <!-- Red Circle for Key Insights -->
+      <div class="info-circle">
+        <div class="info-text">
+          <ul>Through this design research I will:<ul>
+          <ul>
+            <li>Step into user’s shoes and behaviors</li>
+            <li>Observe and interview users’ on their experiences</li>
+            <li>Illustrate user interactions with Personas</li>
+            <li>Narrate users’ end-to-end journey through storyboarding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div id="annotations">
+      <h2>I started this exploration by annotating some of the key features of this public interface</h2>
+      <img id="Interface_Annotation" alt="Annotations of Interface Interations" src="./assets/Interface_Annotated.png"/>
+    </div>
+
+    <div id="interviewquestions">
+      <h2>After each interaction, I interviewed each user on their interaction with the self-check out station. Here are the key take-aways:</h2>
+    
+      <!-- Circle container for Questions 1-8 -->
+      <div class="circle-answers">
+        <!-- First Circle (Questions 1-2) -->
+        <div class="answers-1">
+          <h3>1. Have you used this checkout station before?</h3>
+          <ul>
+            <li>Some users were unaware of the self-checkout option or found it confusing due to prior word-of-mouth experiences.</li>
+            <li>Others had used it occasionally, preferring human interaction over automation.</li>
+          </ul>
+          <h3>2. If so, how often, and what has your previous experience been like?</h3>
+          <ul>
+            <li>Users who had used it before did so only when staff weren’t available.</li>
+            <li>Prior experience sometimes helped them anticipate the process (e.g., from observing librarians), but the interface still caused confusion.</li>
+          </ul>
+          <h3>3. If not, what did you expect the checkout process to involve?</h3>
+          <ul>
+            <li>Assumed it would involve scanning the book but did not expect needing to scan an ID first.</li>
+            <li>Lack of prior awareness of the self-checkout station contributed to initial confusion.</li>
+          </ul>
+        </div>
+    
+        <!-- Second Circle (Questions 3-5) -->
+        <div class="answers-2">
+          <h3>4. Could you walk me through the checkout process?</h3>
+          <ul>
+            <li>Users followed expected steps but encountered issues with barcode placement, ID scanning, and machine responses.</li>
+            <li>The distinction between different components (screen vs. scanner) was unclear to some users.</li>
+          </ul>
+          <h3>5. Would you describe the checkout process as frictionless?</h3>
+          <ul>
+            <li>No—users encountered multiple points of confusion, especially with barcode placement and feedback cues.</li>
+            <li>Some experienced failed attempts before successfully checking out.</li>
+          </ul>
+          <h3>6. If not in which part of the process did you experience that friction on what to do next?</h3>
+          <ul>
+            <li>The green light gave misleading feedback, making users think the checkout was complete when it wasn’t.</li>
+            <li>The number of instructional stickers caused information overload instead of clarity.</li>
+            <li>Uncertainty about whether the screen and scanner were part of the same system.</li>
+          </ul>
+        </div>
+    
+        <!-- Third Circle (Questions 6-8) -->
+        <div class="answers-3">
+          <h3>7. Did the interface have all the available features you expected? Why or why not?</h3>
+          <ul>
+            <li>While it had all the necessary functions, users found it cluttered or counterintuitive.</li>
+            <li>Some instructions were helpful, but others (like excessive labels) contributed to confusion.</li>
+          </ul>
+          <h3>8. Do you think you could have completed the checkout process without the on-screen instructions or labels? Why or why not?</h3>
+          <ul>
+            <li>Some users thought they could have figured it out eventually, especially if they had prior exposure to librarians checking out books.</li>
+            <li>Others might have assumed the checkout was complete due to misleading visual cues.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="empathymaps">
+      <h2>Empathy Maps</h2>
+      <h3>
+        The next step in my exploration was creating personas that are not actual people but I synthesized directly from observations of the interviewed users. 
+        One of the key goals through this exercise was to summarize the distinct set of behavioral patterns regarding the use of public interface. 
+      </h3>
+      <img id="User_1_Persona" alt="Persona/Empathy Map of User 1" src="./assets/User_1_Persona.png"/>
+      <img id="User_2_Persona" alt="Persona/Empathy Map of User 2" src="./assets/User_2_Persona.png"/>
+    </div>
+  
+    <div id="storyboarding">
+      <h2>Storyboarding</h2>
+      <h3>The final component of this analysis involved depicting one of the persona's start-to-end user journey. This reflects the goals my persona and all the steps necessary to use the interface.</h3>
+    </div>
+  </body>
+  
+</html>
