@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.2); /* Adjust the scale factor as needed */
+  transform: scale(1.2); 
   transform-origin: center;
 }
 
@@ -36,13 +36,19 @@ body {
 
 /* Intro Text Alignment and Spacing */
 .intro-container, .intro-why-website-container {
-  width: 90%;              /* Ensure they share the same container width */
-  margin: 0 auto;          /* Center the container on the page */
-  padding: 0;              /* Remove extra padding */
+  width: 90%;          
+  margin: 0 auto;         
+  padding: 0;             
 }
 
 .intro-text ul{
   font-size: 25px;
+}
+
+.intro-text ul,
+.intro-why-website-text ul {
+  margin: 0;
+  padding: 0;
 }
 
 .intro-why-website-text{
@@ -50,17 +56,17 @@ body {
 }
 
 .intro-text, .intro-why-website-text {
-  text-align: left;        /* Align text to the left */
-  margin-top: 5px;         /* Reduce the gap above */
-  margin-bottom: 5px;      /* Reduce the gap below */
-  line-height: 1.4;        /* Adjust line-height if needed */
+  text-align: left;     
+  margin-top: 5px;       
+  margin-bottom: 5px;    
+  line-height: 1.4;      
 }
 
 /* h2 Headings: left aligned with some padding */
 h2 {
   text-align: left;
-  padding-left: 8v0px;      /* Add left padding for breathing room */
-  margin: 20px 0 10px 0;    /* Adjust vertical spacing as needed */
+  padding-left: 80px;   
+  margin: 20px 0 10px 0;   
 }
 
 /* EXISTING WEBPAGE SCREENSHOT STYLING */
@@ -74,7 +80,7 @@ h2 {
 
 /* EXISTING WEBPAGE SCREENSHOT STYLING */
 .photo-box {
-  flex: 0 0 calc(33.333% - 20px); /* Three boxes per row with some margin */
+  flex: 0 0 calc(33.333% - 20px); 
   background-color: #0047AB;
   border: 1px solid #ccc;
   margin: 10px;
@@ -97,7 +103,7 @@ h2 {
 /* Fixed height with object-fit: contain to display the full screenshot */
 .photo-box img {
   width: 100%;
-  height: 300px;  /* Increase this value if you need a taller display */
+  height: 300px;  
   object-fit: contain;
   display: block;
 }
@@ -113,7 +119,7 @@ h2 {
 
 /* Each box styled as a square */
 .issue-box {
-  flex: 0 0 calc(33.333% - 20px); /* Three boxes per row with some margin */
+  flex: 0 0 calc(33.333% - 20px);
   background-color: #edf18d;
   border: 1px solid #ccc;
   margin: 10px;
@@ -138,14 +144,23 @@ h2 {
   padding-left: 0;
 }
 
+#webAIM-WAVE-discussion-container h3 {
+  color: black;          
+  margin: 10px 0;          
+  padding: 0;
+  padding-left: 80px;  
+  padding-top: 10px;                   
+  font-size: 17px;     
+}
+
 .waive-box {
-  flex: 0 0 calc(25% - 20px); /* Four boxes per row with some margin */
+  flex: 0 0 calc(25% - 20px); 
   background-color: #edf18d;
   border: 1px solid #ccc;
   margin: 10px;
   box-sizing: border-box;
   padding: 15px;
-  aspect-ratio: 1 / 1; /* Maintain square shape; adjust if needed */
+  aspect-ratio: 1 / 1; 
 }
 
 .waive-box h3 {
@@ -170,25 +185,25 @@ h2 {
 #visual-design-style-guide {
   width: 82%;
   border: 3px solid #0047AB;
-  display: block; /* Ensures proper block-level sizing */
-  margin: 0 auto; /* Centers the image */
+  display: block; 
+  margin: 0 auto;
 }
 
 .figma-link, .mockup-link {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
-  color: #edf18d;
-  background-color: #0047AB; /* Blue highlight */
+  color: #0047AB;
   text-decoration: none;
+  text-align: left;
+  padding-left: 80px;   
 }
 
 .figma-link ::after {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
-  color: #edf18d;
-  background-color: #0047AB; /* Blue highlight */
+  color: #0047AB;
   text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -197,18 +212,33 @@ h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
-  color: #edf18d;
-  background-color: #0047AB; /* Blue highlight */
+  color: #0047AB;
   text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .figma-link:hover {
-  transform: scale(1.1);      /* Enlarges the link on hover */
-  text-decoration: underline; /* Adds underline on hover */
+  transform: scale(1.1);   
+  text-decoration: underline;
 }
 
 .mockup-link:hover {
-  transform: scale(1.1);      /* Enlarges the link on hover */
-  text-decoration: underline; /* Adds underline on hover */
+  transform: scale(1.1);     
+  text-decoration: underline; 
+}
+
+#present-redesign-container h4 {
+  color: black;          
+  margin: 10px 0;          
+  padding: 0;
+  padding-left: 80px;  
+  padding-top: 10px;                   
+  padding-bottom: 80px;     
+  font-size: 17px;     
+}
+
+#figma-designs-container,
+#present-redesign-container {
+  width: 100%;
+  margin: 0 auto;
 }
