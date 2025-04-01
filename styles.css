@@ -26,7 +26,6 @@ body {
 }
 
 /* TEXT STYLING */
-
 .title h1 {
   color: #0047AB;
 }
@@ -42,10 +41,7 @@ body {
   text-align: left;
 }
 
-
 /* EXISTING WEBPAGE SCREENSHOT STYLING */
-/* Parent container to line up the photo boxes */
-/* Parent container: 80% width and centered */
 #existing-website-photos-container {
   display: flex;
   justify-content: space-between;
@@ -72,7 +68,6 @@ body {
   padding-bottom: 10px;
 }
 
-
 .photo-box figure {
   margin: 0;
 }
@@ -84,8 +79,6 @@ body {
   object-fit: contain;
   display: block;
 }
-
-
 
 /* Container to hold the three boxes side by side */
 .issues-container {
@@ -104,8 +97,28 @@ body {
   margin: 10px;
   box-sizing: border-box;
   padding: 15px;
-  text-align: center;
-  
-  /* This enforces a square shape; note that if content is too large, it might overflow */
   aspect-ratio: 1 / 1;
+}
+
+.issue-box h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.issue-box p {
+  text-align: left;
+}
+
+.issue-box ul {
+  list-style-type: disc;
+  margin-right: 10px;   
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+#visual-design-style-guide {
+  width: 82%;
+  border: 3px solid #0047AB;
+  display: block; /* Ensures proper block-level sizing */
+  margin: 0 auto; /* Centers the image */
 }
