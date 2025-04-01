@@ -25,16 +25,80 @@ body {
   color: #edf18d;
 }
 
+/* TEXT STYLING */
+
+.title h1 {
+  color: #0047AB;
+}
+
+.intro-text{
+  font-size: 30px;
+  text-align: left;
+  padding: 0;
+}
+
+.intro-why-website-text{
+  font-size: 20px;
+  text-align: left;
+}
+
+
+/* EXISTING WEBPAGE SCREENSHOT STYLING */
+/* Parent container to line up the photo boxes */
+/* Parent container: 80% width and centered */
+#existing-website-photos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* EXISTING WEBPAGE SCREENSHOT STYLING */
+.photo-box {
+  flex: 0 0 calc(33.333% - 20px); /* Three boxes per row with some margin */
+  background-color: #0047AB;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.photo-box figcaption {
+  padding-bottom: 10px;
+}
+
+
+.photo-box figure {
+  margin: 0;
+}
+
+/* Fixed height with object-fit: contain to display the full screenshot */
+.photo-box img {
+  width: 100%;
+  height: 300px;  /* Increase this value if you need a taller display */
+  object-fit: contain;
+  display: block;
+}
+
+
+
 /* Container to hold the three boxes side by side */
 .issues-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Each box styled as a square */
 .issue-box {
-  flex: 0 0 calc(33.333% - 20px); /* three boxes per row with some margin */
+  flex: 0 0 calc(33.333% - 20px); /* Three boxes per row with some margin */
   background-color: #edf18d;
   border: 1px solid #ccc;
   margin: 10px;
