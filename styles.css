@@ -116,9 +116,42 @@ body {
   padding-left: 0;
 }
 
+.waive-box {
+  flex: 0 0 calc(25% - 20px); /* Four boxes per row with some margin */
+  background-color: #edf18d;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  aspect-ratio: 1 / 1; /* Maintain square shape; adjust if needed */
+}
+
+.waive-box h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.waive-box ul {
+  list-style-type: disc;
+  margin-right: 10px;   
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+.waive-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
 #visual-design-style-guide {
   width: 82%;
   border: 3px solid #0047AB;
   display: block; /* Ensures proper block-level sizing */
   margin: 0 auto; /* Centers the image */
+}
+
+.figma-design-link {
+  font-size: 40px;
 }
