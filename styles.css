@@ -26,19 +26,41 @@ body {
 }
 
 /* TEXT STYLING */
-.title h1 {
-  color: #0047AB;
+#title h1 {
+  color: #0047AB;          
+  margin: 10px 0;          
+  padding: 0;              
+  padding-top: 10px;     
+  font-size: 40px;     
 }
 
-.intro-text{
-  font-size: 30px;
-  text-align: left;
-  padding: 0;
+/* Intro Text Alignment and Spacing */
+.intro-container, .intro-why-website-container {
+  width: 90%;              /* Ensure they share the same container width */
+  margin: 0 auto;          /* Center the container on the page */
+  padding: 0;              /* Remove extra padding */
+}
+
+.intro-text ul{
+  font-size: 25px;
 }
 
 .intro-why-website-text{
   font-size: 20px;
+}
+
+.intro-text, .intro-why-website-text {
+  text-align: left;        /* Align text to the left */
+  margin-top: 5px;         /* Reduce the gap above */
+  margin-bottom: 5px;      /* Reduce the gap below */
+  line-height: 1.4;        /* Adjust line-height if needed */
+}
+
+/* h2 Headings: left aligned with some padding */
+h2 {
   text-align: left;
+  padding-left: 8v0px;      /* Add left padding for breathing room */
+  margin: 20px 0 10px 0;    /* Adjust vertical spacing as needed */
 }
 
 /* EXISTING WEBPAGE SCREENSHOT STYLING */
@@ -152,6 +174,41 @@ body {
   margin: 0 auto; /* Centers the image */
 }
 
-.figma-design-link {
-  font-size: 40px;
+.figma-link, .mockup-link {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #edf18d;
+  background-color: #0047AB; /* Blue highlight */
+  text-decoration: none;
+}
+
+.figma-link ::after {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #edf18d;
+  background-color: #0047AB; /* Blue highlight */
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mockup-link ::after {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #edf18d;
+  background-color: #0047AB; /* Blue highlight */
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.figma-link:hover {
+  transform: scale(1.1);      /* Enlarges the link on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+.mockup-link:hover {
+  transform: scale(1.1);      /* Enlarges the link on hover */
+  text-decoration: underline; /* Adds underline on hover */
 }
